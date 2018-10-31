@@ -1,0 +1,12 @@
+asyncio
+asyncpg==0.15.0
+aiojobs
+aiohttp
+aiohttp_debugtoolbar
+click
+jsonschema
+lightgbm==2.1.2
+pyyaml
+requests
+simplejson
+scikit-learn==0.19.2
