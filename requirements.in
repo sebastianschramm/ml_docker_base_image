@@ -1,0 +1,12 @@
+asyncio
+asyncpg
+aiojobs
+aiohttp
+aiohttp_debugtoolbar
+click
+jsonschema
+lightgbm
+pyyaml
+requests
+simplejson
+scikit-learn
