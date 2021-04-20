@@ -4,31 +4,78 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in --upgrade
 #
-
 aiohttp-debugtoolbar==0.5.0
-aiohttp-jinja2==1.1.0     # via aiohttp-debugtoolbar
+    # via -r requirements.in
+aiohttp-jinja2==1.1.0
+    # via aiohttp-debugtoolbar
 aiohttp==3.5.4
+    # via
+    #   -r requirements.in
+    #   aiohttp-debugtoolbar
+    #   aiohttp-jinja2
+    #   aiojobs
 aiojobs==0.2.2
-async-timeout==3.0.1      # via aiohttp
+    # via -r requirements.in
+async-timeout==3.0.1
+    # via aiohttp
 asyncio==3.4.3
-asyncpg==0.18.3
-attrs==19.1.0             # via aiohttp, jsonschema
-certifi==2018.11.29       # via requests
-chardet==3.0.4            # via aiohttp, requests
+    # via -r requirements.in
+asyncpg==0.21.0
+    # via -r requirements.in
+attrs==19.1.0
+    # via
+    #   aiohttp
+    #   jsonschema
+certifi==2018.11.29
+    # via requests
+chardet==3.0.4
+    # via
+    #   aiohttp
+    #   requests
 click==7.0
-idna==2.8                 # via requests, yarl
-jinja2==2.10              # via aiohttp-jinja2
+    # via -r requirements.in
+idna==2.8
+    # via
+    #   requests
+    #   yarl
+jinja2==2.10
+    # via aiohttp-jinja2
 jsonschema==3.0.1
+    # via -r requirements.in
 lightgbm==2.2.3
-markupsafe==1.1.1         # via jinja2
-multidict==4.5.2          # via aiohttp, yarl
-numpy==1.16.2             # via lightgbm, scikit-learn, scipy
-pyrsistent==0.14.11       # via jsonschema
+    # via -r requirements.in
+markupsafe==1.1.1
+    # via jinja2
+multidict==4.5.2
+    # via
+    #   aiohttp
+    #   yarl
+numpy==1.16.2
+    # via
+    #   lightgbm
+    #   scikit-learn
+    #   scipy
+pyrsistent==0.14.11
+    # via jsonschema
 pyyaml==5.1b5
+    # via -r requirements.in
 requests==2.21.0
+    # via -r requirements.in
 scikit-learn==0.20.3
-scipy==1.2.1              # via lightgbm, scikit-learn
+    # via
+    #   -r requirements.in
+    #   lightgbm
+scipy==1.2.1
+    # via
+    #   lightgbm
+    #   scikit-learn
 simplejson==3.16.0
-six==1.12.0               # via jsonschema, pyrsistent
-urllib3==1.24.1           # via requests
-yarl==1.3.0               # via aiohttp
+    # via -r requirements.in
+six==1.12.0
+    # via
+    #   jsonschema
+    #   pyrsistent
+urllib3==1.24.1
+    # via requests
+yarl==1.3.0
+    # via aiohttp
